@@ -8,6 +8,7 @@ public class Patrol : MonoBehaviour
     public Transform[] patrolPoints;
     public int targetPoint;
     public float speed;
+    public float waitTime;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,7 +41,7 @@ public class Patrol : MonoBehaviour
     public IEnumerator Stop()
     {
         speed = 0;
-        yield return new WaitForSeconds(5.0f);
+        yield return new WaitForSeconds(waitTime);
         speed = 4;
         yield return 0;
     }
