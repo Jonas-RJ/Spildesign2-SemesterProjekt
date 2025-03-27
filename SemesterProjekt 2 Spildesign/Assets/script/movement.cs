@@ -1,15 +1,28 @@
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class movement : MonoBehaviour
 {
-    [SerializeField] private float _speed = 1;
-    [SerializeField] private Rigidbody _rb;
+    PlayerInput PlayerInput;
 
-    // Update is called once per frame
-    void Update()
+    InputAction moveAction;
+
+    [SerializeField] float speed = 5;
+
+    void Start()
     {
-        var dir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        PlayerInput = GetComponent<PlayerInput>();
+        moveAction = PlayerInput.actions.FindAction("Move");
+    }
 
-        transform.Translate(dir * _speed * Time.deltaTime);
+    private void Update()
+    {
+        MovePlayer();
+    }
+
+    void MovePlayer()
+    {
+        Debug.Log(moveAction.ReadValue<Vector2>());
+        Vector2 direction = moveAction.ReadValue<Vector2>();
+        transform.position += new Vector3(direction.x, 0, direction.y) * Time.deltaTime;
     }
 }
