@@ -11,7 +11,7 @@ public class movement : MonoBehaviour
     void Start()
     {
         PlayerInput = GetComponent<PlayerInput>();
-        moveAction = PlayerInput.actions.FindAction("Move");
+        moveAction = PlayerInput.actions.FindAction("move");
     }
 
     private void Update()
@@ -21,8 +21,8 @@ public class movement : MonoBehaviour
 
     void MovePlayer()
     {
-        Debug.Log(moveAction.ReadValue<Vector2>());
+        //Debug.Log(moveAction.ReadValue<Vector2>());
         Vector2 direction = moveAction.ReadValue<Vector2>();
-        transform.position += new Vector3(direction.x, 0, direction.y) * Time.deltaTime;
+        transform.position += new Vector3(direction.x, 0, direction.y) * Time.deltaTime * speed;
     }
 }
