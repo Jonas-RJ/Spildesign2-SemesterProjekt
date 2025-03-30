@@ -23,7 +23,7 @@ public class ExperimentPatrol : MonoBehaviour
 
 
         }
-        PS.mAgent.SetDestination(PS.patrolPoints[PS.targetPoint].position);
+        PS.GoToPoint();
     }
 
 }

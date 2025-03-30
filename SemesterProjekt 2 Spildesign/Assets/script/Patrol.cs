@@ -9,7 +9,7 @@ public class Patrol : MonoBehaviour
 {
     //Setting up Array for Patrolpoints, and variables to access the patrolpoints, speed of the enemy and waiting time between points
     [SerializeField] public Transform[] patrolPoints;
-    public int targetPoint;
+    [SerializeField] private int targetPoint;
     [SerializeField] public float speed;
     [SerializeField] public float waitTime;
 
@@ -88,5 +88,10 @@ public class Patrol : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         mAgent.speed = speed;
         yield return 0;
+    }
+
+    public void GoToPoint()
+    {
+        mAgent.SetDestination(patrolPoints[targetPoint].position);
     }
 }
