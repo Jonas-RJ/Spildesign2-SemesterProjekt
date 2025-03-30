@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class Patrol : MonoBehaviour
 {
-    //Setting up Array for Patrolpoints, and variables to access the patrolpoints, speed of the enemy and waiting time on patrol
+    //Setting up Array for Patrolpoints, and variables to access the patrolpoints, speed of the enemy and waiting time between points
     public Transform[] patrolPoints;
     public int targetPoint;
     public float speed;
@@ -34,11 +34,11 @@ public class Patrol : MonoBehaviour
             IncreaseTargetInt();
             StartCoroutine("Stop");
         }
-        //Makes the enemy move towards the patrol points
+        //Makes the enemy move towards the patrol point
         transform.position = Vector3.MoveTowards(transform.position, patrolPoints[targetPoint].position, speed * Time.deltaTime);
     }
 
-    //Method for increasing the targetpoint number and resetting if we reached the threshold
+    //Method for increasing the targetpoint number and resetting back to 0 if the threshold is reached
     void IncreaseTargetInt()
     {
         targetPoint++;
@@ -48,7 +48,7 @@ public class Patrol : MonoBehaviour
         }
     }
 
-    //Coroutine for having the enemy stop on it's patrol for x seconds
+    //Coroutine for having the enemy stop on it's patrol for X amount of seconds
     public IEnumerator Stop()
     {
         speed = 0;
