@@ -6,10 +6,10 @@ using System.Collections.Generic;
 public class Patrol : MonoBehaviour
 {
     //Setting up Array for Patrolpoints, and variables to access the patrolpoints, speed of the enemy and waiting time between points
-    public Transform[] patrolPoints;
-    public int targetPoint;
-    public float speed;
-    public float waitTime;
+    [SerializeField] private Transform[] patrolPoints;
+    private int targetPoint;
+    [SerializeField] private float speed;
+    [SerializeField] private float waitTime;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
