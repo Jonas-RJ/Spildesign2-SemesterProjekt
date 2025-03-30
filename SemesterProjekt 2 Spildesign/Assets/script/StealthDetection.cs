@@ -10,36 +10,8 @@ public class StealthDetection : MonoBehaviour
     [SerializeField] private static bool alertOthersInMob;
     [SerializeField] private static bool isAlert;
     [SerializeField] private static bool isSuspicious;
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
-    void Update()
-    {
-        if (TimeToSeen > 5)
-        {
-            alertOthersInMob = true;
-            //implement all mobs chasing here
-        }
-        if (TimeToSeen < 3) 
-        {
-         isAlert = true;
-            playerSpottedByEnemy = true;
-            //implement individual looking/chasing behaviour here
-        }
-        if (TimeToSeen < 1) 
-        {
-            isSuspicious = true;
-            // implement looking behaviour here
-        }
-        
-
-    }
+    void Update(){}
 
 
 // vi bruger OnTriggerstay til at checke om playeren er i detection range, hvis playeren er, så incrementer vi en detection value med 5, som tillader at vi kan sætte alert status til chase.
@@ -62,7 +34,25 @@ public class StealthDetection : MonoBehaviour
         PlayerPresentInCollision = 0;
     }
 
-
+    private void alertStatus()
+    {
+        if (TimeToSeen > 5)
+        {
+            alertOthersInMob = true;
+            //implement all mobs chasing here
+        }
+        if (TimeToSeen < 3 && TimeToSeen >= 1)
+        {
+            isAlert = true;
+            playerSpottedByEnemy = true;
+            //implement individual looking/chasing behaviour here
+        }
+        if (TimeToSeen < 1 && TimeToSeen > 0)
+        {
+            isSuspicious = true;
+            // implement looking behaviour here
+        }
+    }
     private void timerReset()
     {
     }
