@@ -84,9 +84,9 @@ public class Patrol : MonoBehaviour
     //Coroutine for having the enemy stop on it's patrol for X amount of seconds
     public IEnumerator Stop()
     {
-        speed = 0;
+        mAgent.speed = 0;
         yield return new WaitForSeconds(waitTime);
-        speed = 4;
+        mAgent.speed = 4;
         yield return 0;
     }
 }
