@@ -86,7 +86,7 @@ public class Patrol : MonoBehaviour
     {
         mAgent.speed = 0;
         yield return new WaitForSeconds(waitTime);
-        mAgent.speed = 4;
+        mAgent.speed = speed;
         yield return 0;
     }
 }
