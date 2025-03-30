@@ -2,6 +2,8 @@ using JetBrains.Annotations;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using static UnityEngine.GraphicsBuffer;
+using UnityEngine.AI;
 
 public class Patrol : MonoBehaviour
 {
@@ -11,10 +13,17 @@ public class Patrol : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float waitTime;
 
+    private NavMeshAgent mAgent;
+    //private float mDistance;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         targetPoint = 0;
+        mAgent = GetComponent<NavMeshAgent>();
+        mAgent.speed = speed;
+        mAgent.isStopped = false;
     }
 
     
@@ -35,7 +44,9 @@ public class Patrol : MonoBehaviour
             StartCoroutine("Stop");
         }
         //Makes the enemy move towards the patrol point
-        transform.position = Vector3.MoveTowards(transform.position, patrolPoints[targetPoint].position, speed * Time.deltaTime);
+        //transform.position = Vector3.MoveTowards(transform.position, patrolPoints[targetPoint].position, speed * Time.deltaTime);
+        //mDistance = Vector3.Distance(mAgent.transform.position, patrolPoints[targetPoint].position);
+        mAgent.SetDestination(patrolPoints[targetPoint].position);
     }
 
     //Method for increasing the targetpoint number and resetting back to 0 if the threshold is reached

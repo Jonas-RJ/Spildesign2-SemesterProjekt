@@ -1,16 +1,23 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.AI;
 
+
+[RequireComponent (typeof(NavMeshAgent))]
 public class Chase : MonoBehaviour
 {
-    public Transform player;
+    public Transform Target;
     [SerializeField] private int speed;
+    private NavMeshAgent mAgent;
+    private float mDistance;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        startChase();
+        mAgent = GetComponent<NavMeshAgent>();
+        mAgent.speed = speed;
+        mAgent.isStopped = false;
     }
 
     // Update is called once per frame
@@ -21,7 +28,8 @@ public class Chase : MonoBehaviour
 
     void startChase()
     {
-        transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        mDistance = Vector3.Distance(mAgent.transform.position, Target.position);
+        mAgent.SetDestination(Target.position);
     }
 
 
