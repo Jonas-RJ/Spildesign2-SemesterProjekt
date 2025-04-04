@@ -1,9 +1,11 @@
+using JetBrains.Annotations;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class MovementScript2 : MonoBehaviour
 {
- //  public bool isRunning = Keyboard.current.leftShiftKey.isPressed;
+    //  public bool isRunning = Keyboard.current.leftShiftKey.isPressed;
 
 
     [SerializeField] private float moveSpeed = 5f;
@@ -36,13 +38,13 @@ public class MovementScript2 : MonoBehaviour
 
     public void OnSprint()
     {
-     /*  
-        if (isRunning)
-        {moveSpeed = sprintSpeed;
-        }
-        else
-        { moveSpeed = normalSpeed;}
-     */
+        /*  
+           if (isRunning)
+           {moveSpeed = sprintSpeed;
+           }
+           else
+           { moveSpeed = normalSpeed;}
+        */
 
         if (moveSpeed <= normalSpeed)
         {
@@ -55,7 +57,8 @@ public class MovementScript2 : MonoBehaviour
             moveSpeed = normalSpeed;
         }
 
-       
+
 
     }
-   }
+
+}
