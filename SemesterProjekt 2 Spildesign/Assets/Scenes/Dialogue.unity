@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 198843506}
   - component: {fileID: 198843505}
   m_Layer: 5
-  m_Name: TestButton
+  m_Name: StartGameButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -458,9 +458,45 @@ MonoBehaviour:
   dialogue:
     name: Dwayne Johnson
     sentences:
-    - Hey there! My name is Dwayne
-    - I'm here to guide you through your dangerous adventures...
-    - And wake you up in the morning of course!
+    - 'Welcome to the wicked world of the city Salem, Massachusetts in the late 1600''s! '
+    - The city is swarmed with paranoia and the hate towards witches is at an all
+      time high. The Mob is getting increasingly violent and is lead by the powerful
+      priest "Samuel Danforth". He secretly aims to manipulate the people into getting
+      control over the city and prosecuting whoever stands in his way or disobeys
+      him!
+    - The 22 year old innocent Elizabeth lives at home now only with her mother and
+      sister as she lost her dad from pneumonia only a few months ago. The family
+      are trying their hardest to lay low and not attract unwanted attention however,
+      their lives are about to change forever...
+    - 'Earlier today, in a meeting with Samuel, Elizabeth was hit on by the priest
+      who is more than 20 years older than her. Naturally she declined and tried
+      to abandon him but this only made him angry. Samuel threatened to get her mother
+      and sister hung disguised as an accusation of Elizabeth being a witch! Trying
+      to stand up to the tyrani Elizabeth continued to refuse. '
+    - Samuel was now furious and eager to abuse his undoubtedly huge influence on
+      the mob. He immedietly ordered his allies to apprehend Elizabeth and more importantly
+      her family.
+    - In a moment of lack of concentration from the guards Elizabeth managed to escape
+      and get out of sight. This made it feel even more important to Samuel that
+      her family was caught and persecuted... and to his pleasant surprise that is
+      exactly what happened.
+    - 'This meant that when Elizabeth eventually made it home, after sneaker through
+      the city through lesser populated streets, it was already too late. As fast
+      as possible she snuck her way to the town square - the typical place for witch
+      executions. '
+    - "To her horror when she arrived she was met by the sight of her mother and
+      sister already being escorted to the gallow by guards. \nIn utter shock and
+      feeling frozen Elizabeth could do nothing but stand there in the shadows and
+      watch as she lost the remaining part of her family... "
+    - The ceremony finished by Samuel ordering the people of the mob to search for
+      and apprehend Elizabeth in any sight of her. As she hear this it became evident
+      to Elizabeth that she had no choice but to leave the city. Wanting to fetch
+      whatever she could she ran home with tears running down her face.
+    - Arriving home hoping that this would be too obvious for the mob to check first
+      she gathered whatever useful stuff she could. After being home for less than
+      10 minutes she got a heads up from the neighbour that the guards were on their
+      way. Knowing this was her last chance of getting out alive she climbed out
+      the window to start her journey to safety...
 --- !u!114 &198843506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,8 +808,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -810,7 +846,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -74.27838, y: 11.257385, z: -677.37, w: -222.12744}
+  m_margin: {x: -74.27838, y: -41.09265, z: -677.37, w: -222.12744}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -881,7 +917,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'START CONVERSATION
+  m_text: 'START GAME
 
 '
   m_isRightToLeft: 0
@@ -1161,7 +1197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1559632527
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1228,8 +1264,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -7,61 +7,62 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI nameText; 
     public TextMeshProUGUI dialogueText;
     
     public Animator animator;
     
-    private Queue<string> sentences;
+    private Queue<string> sentences;                //Keeps track of all the sentences in our dialogue box.
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        sentences = new Queue<string>();
+        sentences = new Queue<string>();            //Initializes the queue.
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue) //This function gets started on the click of the "Start Game" button.
     {
-        animator.SetBool("IsOpen", true);
+        animator.SetBool("IsOpen", true); //Makes sure the dialogue box actually gets on the screen.
         
-        nameText.text = dialogue.name;
+        nameText.text = dialogue.name; //Actually sets the text in the dialogue box to our dialogue.
         
-        sentences.Clear();
+        sentences.Clear(); //Clearing any sentences in the queue from a previous conversation.
 
         foreach (string sentence in dialogue.sentences)
         {
-            sentences.Enqueue(sentence);
+            sentences.Enqueue(sentence); //Puts every sentence in the queue.
         }
 
         DisplayNextSentence();
     }
 
-    public void DisplayNextSentence()
+    public void DisplayNextSentence() //This method gets called in the OnClick in the inspector on the continue button.
     {
-        if (sentences.Count == 0)
+        if (sentences.Count == 0) //Making sure that there is even more sentences to queue.
         {
-            EndDialogue();
+            EndDialogue(); //Ending the dialogue
+            
             return;
         }
-        string sentence = sentences.Dequeue();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        string sentence = sentences.Dequeue(); //Gets the next sentence in the queue.
+        StopAllCoroutines(); //Stop animating before an eventual new dialogue gets opened. So makes sure that if TypeSentence is already running it stops doing so.
+        StartCoroutine(TypeSentence(sentence)); 
     }
 
-    IEnumerator TypeSentence(string sentence)
+    IEnumerator TypeSentence(string sentence) 
     {
         dialogueText.text = "";
 
         foreach (char letter in sentence.ToCharArray())
         {
-            dialogueText.text += letter;
-            yield return null;
+            dialogueText.text += letter; //Appends a letter to the end of the string.
+            yield return null; //Makes sure the text appears smoothly on the screen
         }
     }
 
     void EndDialogue()
     {
-        animator.SetBool("IsOpen", false);
+        animator.SetBool("IsOpen", false); //Makes sure the dialogue box gets off the screen.
     }
     
 }
