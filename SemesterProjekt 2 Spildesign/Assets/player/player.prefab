@@ -119,11 +119,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4200774052723013521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46708cbf8b72a0847b16f3302b348bfc, type: 3}
+  m_Script: {fileID: 11500000, guid: facc56f562bbf4244b552f04c19afb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
-  _rb: {fileID: 0}
+  moveSpeed: 5
+  capsuleCollider: {fileID: 0}
+  sprintSpeed: 20
+  normalSpeed: 5
 --- !u!54 &5205841243372481910
 Rigidbody:
   m_ObjectHideFlags: 0
