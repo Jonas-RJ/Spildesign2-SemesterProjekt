@@ -5,8 +5,8 @@ public class StealthDetection : MonoBehaviour
     [SerializeField] private int PlayerPresentInCollision;
     [SerializeField] private float TimeToSeen;
 
-   [SerializeField] public Patrol P2;
-    [SerializeField]public Chase Chaser;
+    [SerializeField] public Patrol P2;
+    [SerializeField] public Chase Chaser;
     [SerializeField] private bool playerSpottedByEnemy;
     [SerializeField] private static bool alertOthersInMob;
     [SerializeField] private  bool isAlert;
