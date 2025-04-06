@@ -26,7 +26,7 @@ public class Chase : MonoBehaviour
         startChase();
     }
 
-    void startChase()
+    public void startChase()
     {
         mDistance = Vector3.Distance(mAgent.transform.position, Target.position);
         mAgent.SetDestination(Target.position);
