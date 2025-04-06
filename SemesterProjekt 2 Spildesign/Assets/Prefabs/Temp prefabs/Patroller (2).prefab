@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 8771801978365041256}
   - component: {fileID: 798769452803133423}
   - component: {fileID: 6616055045838238910}
+  - component: {fileID: 1723320473117432266}
+  - component: {fileID: 6918571266647445962}
   m_Layer: 9
   m_Name: Patroller (2)
   m_TagString: Enemy
@@ -178,8 +180,34 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+--- !u!114 &1723320473117432266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546582792810696855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a1e92bde4e6e1488164ab6301e86b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+  speed: 5
+--- !u!114 &6918571266647445962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546582792810696855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a1e92bde4e6e1488164ab6301e86b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+  speed: 5
 --- !u!1 &5784362386697056225
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,8 +331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerPresentInCollision: 0
   TimeToSeen: 0
-  P2: {fileID: 0}
-  Chaser: {fileID: 0}
+  P2: {fileID: 6616055045838238910}
+  Chaser: {fileID: 6918571266647445962}
   playerSpottedByEnemy: 0
   isAlert: 0
   isSuspicious: 0

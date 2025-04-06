@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 449848962106201034}
   m_Layer: 0
   m_Name: Jonas' Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -294,6 +294,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 20
   capsuleCollider: {fileID: 7039959153162586429}
+  sprintSpeed: 0
+  normalSpeed: 5
 --- !u!1 &3795666492983843158
 GameObject:
   m_ObjectHideFlags: 0

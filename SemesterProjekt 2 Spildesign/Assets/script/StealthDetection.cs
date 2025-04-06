@@ -14,6 +14,7 @@ public class StealthDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        alertStatus();
         if (isAlert)
         {
             Chaser.startChase();
@@ -22,6 +23,7 @@ public class StealthDetection : MonoBehaviour
         if (alertOthersInMob)
         {
             Chaser.startChase();
+            print("start to chase");
         }
         if (!isAlert)
         {

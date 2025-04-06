@@ -23,13 +23,13 @@ public class Chase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        startChase();
     }
 
     public void startChase()
     {
         mDistance = Vector3.Distance(mAgent.transform.position, Target.position);
         mAgent.SetDestination(Target.position);
+        Debug.Log("im chasing the player");
     }
 
 
