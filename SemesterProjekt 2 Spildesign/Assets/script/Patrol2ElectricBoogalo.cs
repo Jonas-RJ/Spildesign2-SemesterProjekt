@@ -3,7 +3,7 @@ using UnityEngine.AI;
 using System.Collections;
 
 
-public class Patrol : MonoBehaviour
+public class Patrol2ElectricBoogaloo : MonoBehaviour
 {
 
     public Transform[] points;
@@ -43,11 +43,6 @@ public class Patrol : MonoBehaviour
     {
         // Choose the next destination point when the agent gets
         // close to the current one.
-        PatrolToNextPoint();
-    }
-
-    public void PatrolToNextPoint()
-    {
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
             GotoNextPoint();
     }

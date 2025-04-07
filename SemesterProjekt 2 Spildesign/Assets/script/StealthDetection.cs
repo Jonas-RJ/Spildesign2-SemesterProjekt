@@ -5,13 +5,31 @@ public class StealthDetection : MonoBehaviour
     [SerializeField] private int PlayerPresentInCollision;
     [SerializeField] private float TimeToSeen;
 
-
+    [SerializeField] public Patrol P2;
+    [SerializeField] public Chase Chaser;
     [SerializeField] private bool playerSpottedByEnemy;
     [SerializeField] private static bool alertOthersInMob;
-    [SerializeField] private static bool isAlert;
-    [SerializeField] private static bool isSuspicious;
+    [SerializeField] private  bool isAlert;
+    [SerializeField] private  bool isSuspicious;
     // Update is called once per frame
-    void Update(){}
+    void Update()
+    {
+        alertStatus();
+        if (isAlert)
+        {
+            Chaser.startChase();
+        }
+
+        if (alertOthersInMob)
+        {
+            Chaser.startChase();
+            print("start to chase");
+        }
+        if (!isAlert)
+        {
+            P2.PatrolToNextPoint();
+        }
+    }
 
 
 // vi bruger OnTriggerstay til at checke om playeren er i detection range, hvis playeren er, så incrementer vi en detection value med 5, som tillader at vi kan sætte alert status til chase.

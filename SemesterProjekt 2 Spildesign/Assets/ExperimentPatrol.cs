@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class ExperimentPatrol : MonoBehaviour
 {
+    /*
     public Patrol PS;
 
 
@@ -25,5 +26,5 @@ public class ExperimentPatrol : MonoBehaviour
         }
         PS.GoToPoint();
     }
-
+    */
 }
