@@ -464,10 +464,10 @@ MonoBehaviour:
       priest "Samuel Danforth". He secretly aims to manipulate the people into getting
       control over the city and prosecuting whoever stands in his way or disobeys
       him!
-    - The 22 year old innocent Elizabeth lives at home now only with her mother and
-      sister as she lost her dad from pneumonia only a few months ago. The family
-      are trying their hardest to lay low and not attract unwanted attention however,
-      their lives are about to change forever...
+    - "The 22 year old innocent Elizabeth lives at home now only with her mother
+      and sister as she lost her dad from pneumonia only a few months ago. \nThe
+      family are trying their hardest to lay low and not attract unwanted attention
+      however, their lives are about to change forever..."
     - 'Earlier today, in a meeting with Samuel, Elizabeth was hit on by the priest
       who is more than 20 years older than her. Naturally she declined and tried
       to abandon him but this only made him angry. Samuel threatened to get her mother
@@ -496,7 +496,7 @@ MonoBehaviour:
       she gathered whatever useful stuff she could. After being home for less than
       10 minutes she got a heads up from the neighbour that the guards were on their
       way. Knowing this was her last chance of getting out alive she climbed out
-      the window to start her journey to safety...
+      the window to begin her journey to safety...
 --- !u!114 &198843506
 MonoBehaviour:
   m_ObjectHideFlags: 0
