@@ -10,7 +10,13 @@ public class StealthDetection : MonoBehaviour
     [SerializeField] private bool playerSpottedByEnemy;
     [SerializeField] private static bool alertOthersInMob;
     [SerializeField] private  bool isAlert;
-    [SerializeField] private  bool isSuspicious;
+   // [SerializeField] private  bool isSuspicious;
+
+
+
+
+    [SerializeField] private float DropChase;
+    [SerializeField] private float ChaseTimerReset = 0;
     // Update is called once per frame
     void Update()
     {
@@ -25,6 +31,9 @@ public class StealthDetection : MonoBehaviour
             Chaser.startChase();
             print("start to chase");
         }
+        resetPatrol();
+
+
         if (!isAlert)
         {
             P2.PatrolToNextPoint();
@@ -62,39 +71,30 @@ public class StealthDetection : MonoBehaviour
         if (TimeToSeen < 3 && TimeToSeen >= 1)
         {
             isAlert = true;
-            playerSpottedByEnemy = true;
-            //implement individual looking/chasing behaviour here
+
         }
+
+        /*
         if (TimeToSeen < 1 && TimeToSeen > 0)
         {
             isSuspicious = true;
-            // implement looking behaviour here
+        }*/
+    }
+  
+
+
+    public void resetPatrol()
+    {
+        if (isAlert && TimeToSeen <= 0)
+        {
+            ChaseTimerReset += Time.deltaTime;
+            if (ChaseTimerReset >= DropChase)
+            {
+                isAlert = false;
+                alertOthersInMob = false;
+                ChaseTimerReset = 0;
+                print("stop chasing");
+            }
         }
-    }
-    private void timerReset()
-    {
-    }
-
-    private void changeToChase() 
-    {
-    
-    }
-
-
-    private void resetPatrol()
-    {
-
-    }
-
-
-    private void alertOthers() 
-    {
-        
-    }
-
-
-    private void changeAlertStatus() 
-    {
-    
     }
 }

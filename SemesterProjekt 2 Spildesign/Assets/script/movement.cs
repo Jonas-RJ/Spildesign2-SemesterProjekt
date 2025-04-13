@@ -7,12 +7,12 @@ public class MovementScript : MonoBehaviour
     //  public bool isRunning = Keyboard.current.leftShiftKey.isPressed;
 
 
-    [SerializeField] private float moveSpeed = 5f;
+  //  [SerializeField] private float moveSpeed = 5f;
     private Vector2 movementInput;
     private Rigidbody rb;
     [SerializeField] CapsuleCollider capsuleCollider;
-    [SerializeField] private float sprintSpeed = 20f;
-    [SerializeField] private float normalSpeed = 5f;
+   // [SerializeField] private float sprintSpeed = 20f;
+  //  [SerializeField] private float normalSpeed = 5f;
 
     bool sprint;
 

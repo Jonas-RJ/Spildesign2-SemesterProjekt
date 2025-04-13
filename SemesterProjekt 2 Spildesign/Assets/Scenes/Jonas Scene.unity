@@ -6179,10 +6179,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Patroller (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 1723320473117432266, guid: e555086ba45f3344584dcce0283224d0, type: 3}
-      propertyPath: Target
-      value: 
-      objectReference: {fileID: 1194275432}
     - target: {fileID: 5789846436549366992, guid: e555086ba45f3344584dcce0283224d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.287546
@@ -6239,6 +6235,10 @@ PrefabInstance:
       propertyPath: 'points.Array.data[3]'
       value: 
       objectReference: {fileID: 729193808}
+    - target: {fileID: 6918571266647445962, guid: e555086ba45f3344584dcce0283224d0, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 1194275432}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

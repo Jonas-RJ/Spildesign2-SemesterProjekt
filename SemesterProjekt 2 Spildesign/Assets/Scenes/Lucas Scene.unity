@@ -46145,6 +46145,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!4 &800457537 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1556349665610883106, guid: aa92e341d9ae2e84ea4b6b2f2f02e5e6, type: 3}
+  m_PrefabInstance: {fileID: 525669192}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &800612703
 Mesh:
   m_ObjectHideFlags: 0
@@ -70306,6 +70311,10 @@ PrefabInstance:
       propertyPath: 'points.Array.data[5]'
       value: 
       objectReference: {fileID: 524559142}
+    - target: {fileID: 6918571266647445962, guid: e555086ba45f3344584dcce0283224d0, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 800457537}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -93742,6 +93751,10 @@ PrefabInstance:
       propertyPath: 'points.Array.data[7]'
       value: 
       objectReference: {fileID: 234631715}
+    - target: {fileID: 6918571266647445962, guid: e555086ba45f3344584dcce0283224d0, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 800457537}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
