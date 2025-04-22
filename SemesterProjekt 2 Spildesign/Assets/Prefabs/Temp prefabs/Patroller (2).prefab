@@ -320,5 +320,8 @@ MonoBehaviour:
   Chaser: {fileID: 6918571266647445962}
   playerSpottedByEnemy: 0
   isAlert: 0
+  alertMin: 1
+  alertMax: 3
+  AllAlertMax: 5
   DropChase: 5
   ChaseTimerReset: 0

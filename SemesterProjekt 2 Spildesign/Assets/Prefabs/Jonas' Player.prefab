@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8490974516691173331}
   - component: {fileID: 4490204114482760000}
   - component: {fileID: 6426485118361608507}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 8771496824967942953}
   - component: {fileID: 7369800103374547505}
   - component: {fileID: 449848962106201034}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Jonas' Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -447,6 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc652dc9cff0282418ed1f7261e7ccd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotater: 0
 --- !u!114 &5692816421574964326
 MonoBehaviour:
   m_ObjectHideFlags: 0

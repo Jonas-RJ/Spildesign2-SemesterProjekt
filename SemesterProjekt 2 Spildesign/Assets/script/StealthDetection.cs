@@ -10,6 +10,10 @@ public class StealthDetection : MonoBehaviour
     [SerializeField] private bool playerSpottedByEnemy;
     [SerializeField] private static bool alertOthersInMob;
     [SerializeField] private  bool isAlert;
+
+    [SerializeField] private float alertMin;
+    [SerializeField] private float alertMax;
+    [SerializeField] private float AllAlertMax;
    // [SerializeField] private  bool isSuspicious;
 
 
@@ -63,12 +67,12 @@ public class StealthDetection : MonoBehaviour
 
     private void alertStatus()
     {
-        if (TimeToSeen > 5)
+        if (TimeToSeen > AllAlertMax)
         {
             alertOthersInMob = true;
             //implement all mobs chasing here
         }
-        if (TimeToSeen < 3 && TimeToSeen >= 1)
+        if (TimeToSeen < alertMax && TimeToSeen >= alertMin)
         {
             isAlert = true;
 

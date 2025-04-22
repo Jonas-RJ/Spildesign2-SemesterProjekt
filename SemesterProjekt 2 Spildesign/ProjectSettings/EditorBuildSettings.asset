@@ -5,15 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/GameOverScene.unity
-    guid: 9076be641949947f0bcbaef3772de9b6
   - enabled: 1
     path: Assets/Scenes/Dialogue.unity
     guid: f3527c05c68224ae38e0c3f0eb98db9f
   - enabled: 1
     path: Assets/Scenes/Lucas Scene.unity
     guid: cfb24572ef620a04f812005a9291a591
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: 9076be641949947f0bcbaef3772de9b6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
