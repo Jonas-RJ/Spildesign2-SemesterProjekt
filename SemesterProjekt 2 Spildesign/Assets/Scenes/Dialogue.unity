@@ -1105,7 +1105,7 @@ GameObject:
   - component: {fileID: 1440354398}
   - component: {fileID: 1440354402}
   m_Layer: 5
-  m_Name: Intro Dialogue
+  m_Name: Intro Dialogue Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1650,7 +1650,7 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 176873922}
   - {fileID: 1858073796}
+  - {fileID: 176873922}
   - {fileID: 1440354401}
   - {fileID: 1133725673}
