@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - PatrolPoint
+  - Hider
+  - Interact
+  - PlayerHiding
   layers:
   - Default
   - TransparentFX
