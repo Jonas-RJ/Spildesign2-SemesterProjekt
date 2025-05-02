@@ -9,7 +9,7 @@ public class Patrol : MonoBehaviour
     public Transform[] points;
     private int destPoint = 0;
     private NavMeshAgent agent;
-
+    public Animator animator;
 
     void Start()
     {

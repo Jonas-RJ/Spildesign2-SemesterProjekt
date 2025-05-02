@@ -15,11 +15,15 @@ public class MovementScript2 : MonoBehaviour
     [SerializeField] private float sprintSpeed = 20f;
     [SerializeField] private float normalSpeed = 5f;
 
+    Animator animator;
+    GameControls Input;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         capsuleCollider = GetComponent<CapsuleCollider>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,6 +31,43 @@ public class MovementScript2 : MonoBehaviour
     {
         rb.linearVelocity = new Vector3(movementInput.x * moveSpeed, rb.linearVelocity.y, movementInput.y * moveSpeed);
 
+        /*walking forward
+        if ()
+        {
+            animator.SetBool("IsWalking", true);
+        }
+        else 
+        {
+            animator.SetBool("IsWalking", false);
+        }
+
+        // walking back
+        if ()
+        {
+            animator.SetBool("WalkingBack", true);
+        }
+        else 
+        {
+            animator.SetBool("WalkingBack", false);
+        }
+        // walking left side
+        if ()
+        {
+            animator.SetBool("WalkingLeft", true);
+        }
+        else 
+        {
+            animator.SetBool("WalkingLeft", false);
+        }
+        // walking right side
+        if ()
+        {
+            animator.SetBool("WalkingRight", true);
+        }
+        else 
+        {
+            animator.SetBool("WalkingRight", false);
+        }*/
     }
 
 
@@ -59,6 +100,16 @@ public class MovementScript2 : MonoBehaviour
 
 
 
+    }
+
+    void OnEnable()
+    {
+        Input.Player.Enable();
+    }
+
+    void OnDisable()
+    {
+        Input.Player.Disable();
     }
 
 }
