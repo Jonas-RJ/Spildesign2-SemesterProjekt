@@ -497,7 +497,7 @@ MonoBehaviour:
       she gathered whatever useful stuff she could. After being home for less than
       10 minutes she got a heads up from the neighbour that the guards were on their
       way. Knowing this was her last chance of getting out alive she climbed out
-      the window to begin her journey to safety...
+      the window and headed north to begin her journey to safety...
   startButton: {fileID: 198843503}
 --- !u!114 &198843506
 MonoBehaviour:
