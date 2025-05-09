@@ -79,7 +79,7 @@ public class MovementScript2 : MonoBehaviour
 
     }
 
-    void OnEnable()
+    /*void OnEnable()
     {
         Input.Player.Enable();
     }
@@ -87,6 +87,6 @@ public class MovementScript2 : MonoBehaviour
     void OnDisable()
     {
         Input.Player.Disable();
-    }
+    }*/
 
 }
