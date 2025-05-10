@@ -31,49 +31,26 @@ public class MovementScript2 : MonoBehaviour
     {
         rb.linearVelocity = new Vector3(movementInput.x * moveSpeed, rb.linearVelocity.y, movementInput.y * moveSpeed);
 
-        /*walking forward
-        if ()
-        {
-            animator.SetBool("IsWalking", true);
-        }
-        else 
-        {
-            animator.SetBool("IsWalking", false);
-        }
-
-        // walking back
-        if ()
-        {
-            animator.SetBool("WalkingBack", true);
-        }
-        else 
-        {
-            animator.SetBool("WalkingBack", false);
-        }
-        // walking left side
-        if ()
-        {
-            animator.SetBool("WalkingLeft", true);
-        }
-        else 
-        {
-            animator.SetBool("WalkingLeft", false);
-        }
-        // walking right side
-        if ()
-        {
-            animator.SetBool("WalkingRight", true);
-        }
-        else 
-        {
-            animator.SetBool("WalkingRight", false);
-        }*/
+      
     }
 
 
     public void OnMove(InputValue direction)
     {
         movementInput = direction.Get<Vector2>();
+
+        if(movementInput.x !=0 || movementInput.y !=0)
+        {
+            animator.SetFloat("x", movementInput.x);
+            animator.SetFloat("x", movementInput.y);
+
+            animator.SetBool("IsWalking", true);
+        } else
+        {
+            animator.SetBool("IsWalking", false);
+
+        }
+
     }
 
 
