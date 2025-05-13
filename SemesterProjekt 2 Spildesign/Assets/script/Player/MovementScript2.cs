@@ -15,15 +15,16 @@ public class MovementScript2 : MonoBehaviour
     [SerializeField] private float sprintSpeed = 20f;
     [SerializeField] private float normalSpeed = 5f;
 
-    Animator animator;
+    public Animator animator;
     GameControls Input;
+    public bool walking;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         capsuleCollider = GetComponent<CapsuleCollider>();
-        animator = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
