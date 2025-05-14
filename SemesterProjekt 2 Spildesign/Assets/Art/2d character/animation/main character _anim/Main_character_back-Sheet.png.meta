@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c33dca7dfa77394084a30466c9698d8
+guid: 85e97830475add14cb0c3414e62916bb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main character back-Sheet_0
+      name: Main_character_back-Sheet_0
       rect:
         serializedVersion: 2
         x: 20
@@ -112,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d4e77388076dea4a834810608e6ac07
-      internalID: 1407254215
+      spriteID: 4650da218ed9f534aa63a21a4aad4c82
+      internalID: 1297048970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character back-Sheet_1
+      name: Main_character_back-Sheet_1
       rect:
         serializedVersion: 2
         x: 84
         y: 4
         width: 19
-        height: 41
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f42aa0d638e56c458473de0baa3c2cf
-      internalID: -1372390713
+      spriteID: 486a44e19537d4842b765b4c78b8a90d
+      internalID: 624445944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character back-Sheet_2
+      name: Main_character_back-Sheet_2
       rect:
         serializedVersion: 2
         x: 148
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70af399daa13221499d3f83bcf1bf8c5
-      internalID: -1203360088
+      spriteID: 619ea7c8d02cb2842910a581f4292d9d
+      internalID: 1304360046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character back-Sheet_3
+      name: Main_character_back-Sheet_3
       rect:
         serializedVersion: 2
         x: 212
         y: 4
         width: 19
-        height: 41
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,8 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad9bf90d597f1b846a84f70e2e3d5f0c
-      internalID: 1462034107
+      spriteID: e11cb3b04bf9da748919dc776bbf9584
+      internalID: 1630744668
       vertices: []
       indices: 
       edges: []
@@ -188,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 74bb60b1829b45d4e8f551b9485913c3
+    spriteID: 96f5e7b6ca54e2e4ba11e5cfc36bec2d
     internalID: 0
     vertices: []
     indices: 
@@ -198,10 +198,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Main character back-Sheet_0: 1407254215
-      Main character back-Sheet_1: -1372390713
-      Main character back-Sheet_2: -1203360088
-      Main character back-Sheet_3: 1462034107
+      Main_character_back-Sheet_0: 1297048970
+      Main_character_back-Sheet_1: 624445944
+      Main_character_back-Sheet_2: 1304360046
+      Main_character_back-Sheet_3: 1630744668
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

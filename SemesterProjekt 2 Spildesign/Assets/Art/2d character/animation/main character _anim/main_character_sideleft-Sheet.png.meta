@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4a5d64b1b6478e644a40c4570c0390dc
+guid: 166d716209af0154485d410fc39a62c5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,10 +97,54 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: main character side other-Sheet_0
+      name: main_character_sideleft-Sheet_0
       rect:
         serializedVersion: 2
-        x: 27
+        x: 26
+        y: 5
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5471bcd45e7eb46499e8dca546780001
+      internalID: -1258691763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_sideleft-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 5
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e44855b81b24f41aa30b660ab4f628
+      internalID: 1803955860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_sideleft-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 155
         y: 4
         width: 18
         height: 43
@@ -112,17 +156,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dc885529b1b5d24d88d6f68389c4391
-      internalID: -1532455688
+      spriteID: 3bd3b13fe9361ef4c9fcc91e2a0ee273
+      internalID: -27531401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main character side other-Sheet_1
+      name: main_character_sideleft-Sheet_3
       rect:
         serializedVersion: 2
-        x: 91
+        x: 219
         y: 4
         width: 18
         height: 43
@@ -134,52 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 920ef1fcdcbc1c3428ccd9f7e8a41302
-      internalID: -81213124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main character side other-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 152
-        y: 5
-        width: 26
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 859e8a8221d58de40a29923f16bff229
-      internalID: -391933509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main character side other-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 5
-        width: 26
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0e86f10a64b3bf4d8e096870e5c5d6f
-      internalID: 2121485954
+      spriteID: 78c84354bad4ed44387993939ab3750b
+      internalID: -1937930434
       vertices: []
       indices: 
       edges: []
@@ -188,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 528b2268d21f3ab419cbb11ffff24091
+    spriteID: 3e5ce1a0cd99dd64ea31e144bf33038f
     internalID: 0
     vertices: []
     indices: 
@@ -198,10 +198,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      main character side other-Sheet_0: -1532455688
-      main character side other-Sheet_1: -81213124
-      main character side other-Sheet_2: -391933509
-      main character side other-Sheet_3: 2121485954
+      main_character_sideleft-Sheet_0: -1258691763
+      main_character_sideleft-Sheet_1: 1803955860
+      main_character_sideleft-Sheet_2: -27531401
+      main_character_sideleft-Sheet_3: -1937930434
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

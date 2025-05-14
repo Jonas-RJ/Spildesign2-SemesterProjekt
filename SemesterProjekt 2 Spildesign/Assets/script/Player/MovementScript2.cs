@@ -43,10 +43,11 @@ public class MovementScript2 : MonoBehaviour
         if(movementInput.x !=0 || movementInput.y !=0)
         {
             animator.SetFloat("x", movementInput.x);
-            animator.SetFloat("x", movementInput.y);
+            animator.SetFloat("y", movementInput.y);
 
             animator.SetBool("IsWalking", true);
-        } else
+        } 
+        else
         {
             animator.SetBool("IsWalking", false);
 
