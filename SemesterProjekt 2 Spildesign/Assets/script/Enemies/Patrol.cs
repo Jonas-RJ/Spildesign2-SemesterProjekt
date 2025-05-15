@@ -36,6 +36,20 @@ public class Patrol : MonoBehaviour
         // Choose the next point in the array as the destination,
         // cycling to the start if necessary.
         destPoint = (destPoint + 1) % points.Length;
+
+        // animator til npc bevægelse
+        /*if (movementInput.x != 0 || movementInput.y != 0)
+        {
+            animator.SetFloat("x", movementInput.x);
+            animator.SetFloat("y", movementInput.y);
+
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
+
+        }*/
     }
 
 
