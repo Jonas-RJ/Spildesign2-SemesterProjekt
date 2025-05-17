@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private int currentHealth;
-    [SerializeField] private int maxHealth;
+    public int currentHealth;
+    public int maxHealth;
     [SerializeField] float recovery;
     public GameObject GameOverScreen;
     bool CanTakeDamage;
+    public HPChange hpc;
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,7 +26,8 @@ public class Health : MonoBehaviour
             if (CanTakeDamage)
             {
                 CanTakeDamage = false;
-                TakeDamage(); 
+                TakeDamage();
+                hpc.Change();
                 print("damage");
                 Invoke("SetTrue", recovery);
             }
