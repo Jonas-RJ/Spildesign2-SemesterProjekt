@@ -6,7 +6,7 @@ public class InteractAndHide : MonoBehaviour
 private int hideUnhide;
 public GameObject playerObject;
 public MeshRenderer player;
-public MeshRenderer barrel;
+public SpriteRenderer barrel;
     public Button Hide;
     private Button Interact;
      // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,12 +15,7 @@ public MeshRenderer barrel;
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+  
 
 
 
@@ -42,21 +37,25 @@ public MeshRenderer barrel;
     {
 
 
-        if( hideUnhide > 1)
+        if (hideUnhide > 1)
         {
             player.enabled = false;
             barrel.enabled = true;
             hideUnhide++;
             playerObject.tag = "PlayerHiding";
+            
+
+            
         }
-    else {
-        player.enabled = true;
-        barrel.enabled = false;
-        hideUnhide--;
+        else
+        {
+            player.enabled = true;
+            barrel.enabled = false;
+            hideUnhide--;
 
-        //IMPLEMENT CEASE MOVEMENT, CHANGE SPRITE, STOP CHASE, CHANGE PLAYER LAYER FOR DETECTION
+            //IMPLEMENT CEASE MOVEMENT, CHANGE SPRITE, STOP CHASE, CHANGE PLAYER LAYER FOR DETECTION
 
-    }
+        }
 
     }
 
