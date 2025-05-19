@@ -4,6 +4,8 @@ public class CameraRotate : MonoBehaviour
 {
 
     [SerializeField]private int rotater = 0;
+
+    public GameObject CharacterSprite;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,14 +27,18 @@ public class CameraRotate : MonoBehaviour
             transform.localPosition = new Vector3(0, 16, 0);
             print("Camera rotate up");
             print(rotater);
-            rotater ++;
+            rotater++;
+            CharacterSprite.transform.Rotate(50, 0, 0);
         }
-        else {
+        else
+        {
             transform.Rotate(-50, 0, 0);
             transform.localPosition = new Vector3(0, 11, -14);
             print("Camera rotate down");
             print(rotater);
-            rotater --;
+            rotater--;
+                        CharacterSprite.transform.Rotate(-50, 0, 0);
+
         }
     }
 }

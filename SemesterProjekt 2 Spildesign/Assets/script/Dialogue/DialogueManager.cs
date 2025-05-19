@@ -12,7 +12,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     
     public Animator animator;
-
+    
     public GameObject startJourneyButton;
     
     private Queue<string> sentences;                //Keeps track of all the sentences in our dialogue box.
@@ -76,6 +76,7 @@ public class DialogueManager : MonoBehaviour
     public void LoadSceneToStartGame()
     {
         SceneManager.LoadScene("Lucas Scene");
+        
     }
     
 }
