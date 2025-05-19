@@ -9,6 +9,7 @@ TagManager:
   - Hider
   - Interact
   - PlayerHiding
+  - GameOver
   layers:
   - Default
   - TransparentFX
