@@ -5,7 +5,7 @@ public class HPChange : MonoBehaviour
 {
     //References, variables and array
     [SerializeField] private Image[] health;
-    public Health hp;
+    [SerializeField] Health hp;
     [SerializeField] private int change;
     [SerializeField] private int pool;
     [SerializeField] private int maxPool;
@@ -15,6 +15,7 @@ public class HPChange : MonoBehaviour
 
     public void Start()
     {
+        hp = FindObjectOfType<Health>();
         pool = hp.maxHealth;
         maxPool = hp.maxHealth;
     }

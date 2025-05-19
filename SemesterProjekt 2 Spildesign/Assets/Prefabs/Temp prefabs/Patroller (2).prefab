@@ -520,7 +520,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2760
+  m_VersionIndex: 2802
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -638,6 +638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerPresentInCollision: 0
   TimeToSeen: 0
+  pui: {fileID: 0}
   P2: {fileID: 6616055045838238910}
   Chaser: {fileID: 6918571266647445962}
   playerSpottedByEnemy: 0
@@ -857,7 +858,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2760
+  m_VersionIndex: 2802
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []

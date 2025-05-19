@@ -8,11 +8,15 @@ public class Health : MonoBehaviour
     [SerializeField] float recovery;
     public GameObject GameOverScreen;
     bool CanTakeDamage;
-    public HPChange hpc;
+    [SerializeField] HPChange hpc;
     
-    
+    public void Awake()
+    {
+        hpc = FindObjectOfType<HPChange>();
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Start()
     {
         currentHealth = maxHealth;
         CanTakeDamage = true;
@@ -42,6 +46,7 @@ public class Health : MonoBehaviour
         if (currentHealth <= 0)
         {
             //Play captured animation/music
+            Time.timeScale = 0;
             GameOverScreen.SetActive(true);
         }
     }

@@ -5,6 +5,7 @@ public class StealthDetection : MonoBehaviour
     [SerializeField] private int PlayerPresentInCollision;
     [SerializeField] private float TimeToSeen;
 
+    [SerializeField] PursuedUI pui;
     [SerializeField] public Patrol P2;
     [SerializeField] public Chase Chaser;
     [SerializeField] private bool playerSpottedByEnemy;
@@ -21,6 +22,12 @@ public class StealthDetection : MonoBehaviour
 
     [SerializeField] private float DropChase;
     [SerializeField] private float ChaseTimerReset = 0;
+
+    public void Awake()
+    {
+        pui = FindObjectOfType<PursuedUI>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -28,11 +35,13 @@ public class StealthDetection : MonoBehaviour
         if (isAlert)
         {
             Chaser.startChase();
+            pui.Question();
         }
 
         if (alertOthersInMob)
         {
             Chaser.startChase();
+            pui.Exclamation();
             print("start to chase");
         }
         resetPatrol();
@@ -97,6 +106,7 @@ public class StealthDetection : MonoBehaviour
                 isAlert = false;
                 alertOthersInMob = false;
                 ChaseTimerReset = 0;
+                pui.Disable();
                 print("stop chasing");
             }
         }
