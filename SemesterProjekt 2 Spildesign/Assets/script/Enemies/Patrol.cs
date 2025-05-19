@@ -38,10 +38,10 @@ public class Patrol : MonoBehaviour
         destPoint = (destPoint + 1) % points.Length;
 
         // animator til npc bevægelse
-        /*if (movementInput.x != 0 || movementInput.y != 0)
+        if (agent.velocity.magnitude!= 0)
         {
-            animator.SetFloat("x", movementInput.x);
-            animator.SetFloat("y", movementInput.y);
+            animator.SetFloat("x", agent.velocity.magnitude);
+            animator.SetFloat("y", agent.velocity.magnitude);
 
             animator.SetBool("IsWalking", true);
         }
@@ -49,7 +49,7 @@ public class Patrol : MonoBehaviour
         {
             animator.SetBool("IsWalking", false);
 
-        }*/
+        }
     }
 
 

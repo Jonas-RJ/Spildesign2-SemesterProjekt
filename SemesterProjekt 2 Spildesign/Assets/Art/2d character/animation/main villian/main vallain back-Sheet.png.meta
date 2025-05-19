@@ -95,12 +95,100 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: main vallain back-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 4
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e081b93ee6035429c8e62bd4687ae4
+      internalID: 193453018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main vallain back-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 4
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5c811eb2dde42488e212c281838733
+      internalID: 796810357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main vallain back-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 4
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3289edf871ba7274da6785af8499eb3f
+      internalID: -1332630191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main vallain back-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 4
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c559825cbceaed04cad06f2b70f493a2
+      internalID: 2016235436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e1a2df8883399f34a9bd742797c586b0
     internalID: 0
     vertices: []
     indices: 
@@ -109,7 +197,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      main vallain back-Sheet_0: 193453018
+      main vallain back-Sheet_1: 796810357
+      main vallain back-Sheet_2: -1332630191
+      main vallain back-Sheet_3: 2016235436
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
