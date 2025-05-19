@@ -4,6 +4,9 @@ using UnityEngine.UI;
 public class Eavesdropping : MonoBehaviour
 {
 
+
+    DialogueManager DM;
+    DialogueTrigger DT;
     public Button ListenIn;
 
     void OnTriggerEnter(Collider other)
@@ -11,7 +14,6 @@ public class Eavesdropping : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             ListenIn.gameObject.SetActive(true);
-            print("Cheeseburger");
         }
     }
     void OnTriggerExit(Collider col)
