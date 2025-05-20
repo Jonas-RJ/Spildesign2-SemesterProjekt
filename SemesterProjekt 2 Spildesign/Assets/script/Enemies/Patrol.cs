@@ -38,18 +38,7 @@ public class Patrol : MonoBehaviour
         destPoint = (destPoint + 1) % points.Length;
 
         // animator til npc bevægelse
-        if (agent.velocity.magnitude!= 0)
-        {
-            animator.SetFloat("x", agent.velocity.magnitude);
-            animator.SetFloat("y", agent.velocity.magnitude);
-
-            animator.SetBool("IsWalking", true);
-        }
-        else
-        {
-            animator.SetBool("IsWalking", false);
-
-        }
+       
     }
 
 
@@ -58,6 +47,19 @@ public class Patrol : MonoBehaviour
         // Choose the next destination point when the agent gets
         // close to the current one.
         PatrolToNextPoint();
+         
+        if (agent.velocity.x !=0 || agent.velocity.y !=0)
+        {
+            animator.SetFloat("x", agent.velocity.x);
+            animator.SetFloat("y", 100*agent.velocity.y);
+
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
+
+        }
     }
 
     public void PatrolToNextPoint()
