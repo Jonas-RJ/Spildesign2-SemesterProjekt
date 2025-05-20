@@ -15,6 +15,8 @@ public class DialogueManager : MonoBehaviour
     
     public GameObject startJourneyButton;
     
+    
+    
     private Queue<string> sentences;                //Keeps track of all the sentences in our dialogue box.
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,6 +24,7 @@ public class DialogueManager : MonoBehaviour
     {
         sentences = new Queue<string>();            //Initializes the queue.
         startJourneyButton.SetActive(false);
+        
     }
 
     public void StartDialogue(Dialogue dialogue) //This function gets started on the click of the "Start Game" button.
@@ -78,5 +81,6 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadScene("Lucas Scene");
         
     }
+    
     
 }
