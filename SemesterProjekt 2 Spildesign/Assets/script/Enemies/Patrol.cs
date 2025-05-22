@@ -51,7 +51,7 @@ public class Patrol : MonoBehaviour
         if (agent.velocity.x !=0 || agent.velocity.y !=0)
         {
             animator.SetFloat("x", agent.velocity.x);
-            animator.SetFloat("y", 100*agent.velocity.y);
+            animator.SetFloat("y", 250*agent.velocity.y);
 
             animator.SetBool("IsWalking", true);
         }
