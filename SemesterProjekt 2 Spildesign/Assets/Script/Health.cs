@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
     
     public void Awake()
     {
-        hpc = FindObjectOfType<HPChange>();
+        hpc = FindFirstObjectByType<HPChange>();
         GameOverScreen = GameObject.FindWithTag("GameOver");
     }
 
