@@ -15,7 +15,7 @@ public class HPChange : MonoBehaviour
 
     public void Start()
     {
-        hp = FindObjectOfType<Health>();
+        hp = FindFirstObjectByType<Health>();
         pool = hp.maxHealth;
         maxPool = hp.maxHealth;
     }
