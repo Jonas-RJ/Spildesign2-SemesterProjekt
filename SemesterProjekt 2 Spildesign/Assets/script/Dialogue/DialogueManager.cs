@@ -78,7 +78,7 @@ public class DialogueManager : MonoBehaviour
 
     public void LoadSceneToStartGame()
     {
-        SceneManager.LoadScene("Lucas Scene");
+        SceneManager.LoadScene("Map");
         
     }
     

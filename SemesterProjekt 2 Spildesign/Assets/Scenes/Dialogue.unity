@@ -389,7 +389,6 @@ MonoBehaviour:
   nameText: {fileID: 1559632528}
   dialogueText: {fileID: 612449398}
   animator: {fileID: 84134533}
-  ambientMusic: {fileID: 176873923}
   startJourneyButton: {fileID: 320692492}
 --- !u!4 &176873922
 Transform:
@@ -580,7 +579,7 @@ MonoBehaviour:
       and get out of sight. This made it feel even more important to Samuel that
       her family was caught and persecuted... and to his pleasant surprise that is
       exactly what happened.
-    - 'This meant that when Elizabeth eventually made it home, after sneaker through
+    - 'This meant that when Elizabeth eventually made it home, after sneaking through
       the city through lesser populated streets, it was already too late. As fast
       as possible she snuck her way to the town square - the typical place for witch
       executions. '
@@ -589,7 +588,7 @@ MonoBehaviour:
       feeling frozen Elizabeth could do nothing but stand there in the shadows and
       watch as she lost the remaining part of her family... "
     - The ceremony finished by Samuel ordering the people of the mob to search for
-      and apprehend Elizabeth in any sight of her. As she hear this it became evident
+      and apprehend Elizabeth in any sight of her. As she heard this it became evident
       to Elizabeth that she had no choice but to leave the city. Wanting to fetch
       whatever she could she ran home with tears running down her face.
     - Arriving home hoping that this would be too obvious for the mob to check first
@@ -598,6 +597,7 @@ MonoBehaviour:
       way. Knowing this was her last chance of getting out alive she climbed out
       the window and headed north to begin her journey to safety...
   startButton: {fileID: 198843503}
+  DialogueManager: {fileID: 176873921}
 --- !u!114 &198843506
 MonoBehaviour:
   m_ObjectHideFlags: 0
