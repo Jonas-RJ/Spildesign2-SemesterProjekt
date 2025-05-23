@@ -6,6 +6,7 @@ public class TriggerHeadNorth : MonoBehaviour
    
    public DialogueTrigger trigger;
 
+   public GameObject triggerHeadNorth;
 
    public void OnTriggerEnter(Collider other)
    {
@@ -20,7 +21,7 @@ public class TriggerHeadNorth : MonoBehaviour
    {
        if (other.tag == "Player")
        {
-           //headNorthCanvas.gameObject.SetActive(false);
+           triggerHeadNorth.gameObject.SetActive(false);
        }
    }
    

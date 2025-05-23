@@ -445,11 +445,20 @@ PrefabInstance:
       propertyPath: headNorthCanvas
       value: 
       objectReference: {fileID: 525669194}
+    - target: {fileID: 7868065645902039261, guid: 70a77014933f14a08b015e96afe64ed9, type: 3}
+      propertyPath: triggerHeadNorth
+      value: 
+      objectReference: {fileID: 100208464}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70a77014933f14a08b015e96afe64ed9, type: 3}
+--- !u!1 &100208464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3057803254957790881, guid: 70a77014933f14a08b015e96afe64ed9, type: 3}
+  m_PrefabInstance: {fileID: 100208463}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &111020692
 GameObject:
   m_ObjectHideFlags: 0
