@@ -24,7 +24,7 @@ public class Patrol : MonoBehaviour
     }
 
 
-    void GotoNextPoint()
+   public void GotoNextPoint()
     {
         // Returns if no points have been set up
         if (points.Length == 0)
@@ -37,7 +37,7 @@ public class Patrol : MonoBehaviour
         // cycling to the start if necessary.
         destPoint = (destPoint + 1) % points.Length;
 
-        // animator til npc bevægelse
+        // animator til npc bevï¿½gelse
        
     }
 

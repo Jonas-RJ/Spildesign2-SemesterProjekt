@@ -5,7 +5,12 @@ using TMPro;
 public class Hiding : MonoBehaviour
 {
 
-    [Header ("Player switches")]
+    public bool isHiding = false;
+
+    public Health HS;
+    public StealthDetection SD;
+
+    [Header("Player switches")]
     public MovementScript2 ms2;
     public Light playerLight;
     public SpriteRenderer CharSprite;
@@ -27,8 +32,6 @@ public class Hiding : MonoBehaviour
     [Header("Button")]
     public Button HidingButton;
     public TextMeshProUGUI ButtonText;
-
-
 
 
 
@@ -70,6 +73,8 @@ public class Hiding : MonoBehaviour
             ButtonText.text = "Stop Hiding";
             PlayerCam.SetActive(false);
             BoxCam.SetActive(true);
+            HS.CanTakeDamage = false;
+            isHiding = true;
         }
         else
         {
@@ -84,7 +89,8 @@ public class Hiding : MonoBehaviour
             ButtonText.text = "Hide";
             PlayerCam.SetActive(true);
             BoxCam.SetActive(false);
-
+            HS.CanTakeDamage = true;
+            isHiding = false;
 
         }
     }

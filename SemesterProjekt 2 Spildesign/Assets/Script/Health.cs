@@ -3,15 +3,18 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+
+    public Hiding HideScript;
     public int currentHealth;
     public int maxHealth;
     [SerializeField] float recovery;
     [SerializeField] GameObject GameOverScreen;
-    bool CanTakeDamage;
+   public bool CanTakeDamage;
     [SerializeField] HPChange hpc;
     
     public void Awake()
     {
+        HideScript = FindAnyObjectByType<Hiding>();
         hpc = FindFirstObjectByType<HPChange>();
         GameOverScreen = GameObject.FindWithTag("GameOver");
     }
@@ -35,7 +38,11 @@ public class Health : MonoBehaviour
                 TakeDamage();
                 hpc.Change();
                 print("damage");
-                Invoke("SetTrue", recovery);
+                if (HideScript.isHiding == false)
+                {
+                    Invoke("SetTrue", recovery);
+                    print("can take damage");
+                }
             }
         }
     }

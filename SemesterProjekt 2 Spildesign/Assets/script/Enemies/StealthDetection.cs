@@ -3,21 +3,21 @@ using UnityEngine;
 public class StealthDetection : MonoBehaviour
 {
     [SerializeField] private int PlayerPresentInCollision;
-    [SerializeField] private float TimeToSeen;
+    [SerializeField] public float TimeToSeen;
 
     [SerializeField] PursuedUI pui;
     [SerializeField] public Patrol P2;
     [SerializeField] public Chase Chaser;
     [SerializeField] private bool playerSpottedByEnemy;
     [SerializeField] private static bool alertOthersInMob;
-    [SerializeField] private  bool isAlert;
+    [SerializeField] public bool isAlert;
 
     [SerializeField] private float alertMin;
     [SerializeField] private float alertMax;
     [SerializeField] private float AllAlertMax;
-   // [SerializeField] private  bool isSuspicious;
+    // [SerializeField] private  bool isSuspicious;
 
-
+    public Hiding Hide;
 
 
     [SerializeField] private float DropChase;
@@ -25,6 +25,7 @@ public class StealthDetection : MonoBehaviour
 
     public void Awake()
     {
+        Hide = FindAnyObjectByType<Hiding>();
         pui = FindObjectOfType<PursuedUI>();
     }
 
@@ -46,6 +47,15 @@ public class StealthDetection : MonoBehaviour
         }
         resetPatrol();
 
+        if (Hide.isHiding)
+        {
+            TimeToSeen = 0;
+            isAlert = false;
+            pui.Disable();
+            alertOthersInMob = false;
+            P2.GotoNextPoint();
+
+        }
 
         if (!isAlert)
         {
@@ -54,7 +64,7 @@ public class StealthDetection : MonoBehaviour
     }
 
 
-// vi bruger OnTriggerstay til at checke om playeren er i detection range, hvis playeren er, s� incrementer vi en detection value med 5, som tillader at vi kan s�tte alert status til chase.
+    // vi bruger OnTriggerstay til at checke om playeren er i detection range, hvis playeren er, s� incrementer vi en detection value med 5, som tillader at vi kan s�tte alert status til chase.
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -62,9 +72,9 @@ public class StealthDetection : MonoBehaviour
             TimeToSeen += Time.deltaTime;
             PlayerPresentInCollision = 1;
         }
-        if (PlayerPresentInCollision == 0 && TimeToSeen > 0) 
-        { 
-            TimeToSeen -= Time.deltaTime; 
+        if (PlayerPresentInCollision == 0 && TimeToSeen > 0)
+        {
+            TimeToSeen -= Time.deltaTime;
         }
     }
 
@@ -93,7 +103,7 @@ public class StealthDetection : MonoBehaviour
             isSuspicious = true;
         }*/
     }
-  
+
 
 
     public void resetPatrol()
@@ -110,5 +120,12 @@ public class StealthDetection : MonoBehaviour
                 print("stop chasing");
             }
         }
+    }
+
+
+    public void SetTimerToZero()
+    {
+        isAlert = false;
+        TimeToSeen = 0;
     }
 }
