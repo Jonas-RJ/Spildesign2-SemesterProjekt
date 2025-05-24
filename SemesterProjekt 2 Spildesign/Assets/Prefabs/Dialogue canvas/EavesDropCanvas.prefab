@@ -650,6 +650,7 @@ MonoBehaviour:
     sentences:
     - Fuck Samuel er egentlig et svin man
   startButton: {fileID: 3045557822283718661}
+  DialogueManager: {fileID: 0}
 --- !u!1 &3232815877009808943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,7 +1014,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &3617053622619283185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1325,7 +1326,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 6}
-  m_SizeDelta: {x: 600, y: 300}
+  m_SizeDelta: {x: 720, y: 390}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5045568192576201365
 CanvasRenderer:
@@ -1355,7 +1356,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -226548358, guid: 10e3f5fe61f54554986294d6cc7587d9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1792,3 +1793,4 @@ MonoBehaviour:
     - Completely agree
     - Lets get drunk
   startButton: {fileID: 9072014443805209101}
+  DialogueManager: {fileID: 0}
