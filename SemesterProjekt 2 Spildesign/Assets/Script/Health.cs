@@ -11,6 +11,8 @@ public class Health : MonoBehaviour
     [SerializeField] GameObject GameOverScreen;
    public bool CanTakeDamage;
     [SerializeField] HPChange hpc;
+
+    public AudioSource soundTakeDamage;
     
     public void Awake()
     {
@@ -50,7 +52,7 @@ public class Health : MonoBehaviour
     void TakeDamage()
     {
         currentHealth--;
-        
+        soundTakeDamage.Play();
         
         if (currentHealth <= 0)
         {
