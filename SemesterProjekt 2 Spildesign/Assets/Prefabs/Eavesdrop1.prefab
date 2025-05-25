@@ -1091,6 +1091,7 @@ MonoBehaviour:
     sentences:
     - Fuck Samuel er egentlig et svin man
   startButton: {fileID: 5395383261443204438}
+  DialogueManager: {fileID: 0}
 --- !u!1 &6070050862883610699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,7 +1179,7 @@ SpriteRenderer:
   m_Size: {x: 0.35416666, y: 0.8958333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!65 &1730001153567287003
@@ -1251,8 +1252,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 188, y: -130}
-  m_SizeDelta: {x: 200, y: 30}
+  m_AnchoredPosition: {x: 148, y: -99}
+  m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3589429962058435992
 CanvasRenderer:

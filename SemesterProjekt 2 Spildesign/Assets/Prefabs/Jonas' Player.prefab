@@ -948,8 +948,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 188, y: -130}
-  m_SizeDelta: {x: 200, y: 30}
+  m_AnchoredPosition: {x: 149, y: -90}
+  m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4823915814282531742
 CanvasRenderer:
@@ -3852,8 +3852,11 @@ MonoBehaviour:
   dialogue:
     name: NPC
     sentences:
-    - Jeg hader Liverpool
-    - Same bror
-    - Lets get drunk
+    - Why do I keep blindly following this tyran and doing anything he wants me to
+      do? I really should start thinking for myself.
+    - However, if I do that I would just be prosecuted and sent to purgatory myself.
+      I must put my own needs as the top priority.
+    - But then again, I have not seen any proof that she is not a witch so she must
+      be. I have to keep an eye out for her!
   startButton: {fileID: 8093511931474019888}
   DialogueManager: {fileID: 0}
