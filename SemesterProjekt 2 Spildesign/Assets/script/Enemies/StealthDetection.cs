@@ -18,7 +18,7 @@ public class StealthDetection : MonoBehaviour
     // [SerializeField] private  bool isSuspicious;
 
     public Hiding Hide;
-
+public int nextPointer = 0;
 
     [SerializeField] private float DropChase;
     [SerializeField] private float ChaseTimerReset = 0;
@@ -53,7 +53,7 @@ public class StealthDetection : MonoBehaviour
             isAlert = false;
             pui.Disable();
             alertOthersInMob = false;
-            P2.GotoNextPoint();
+            nextpoint();
 
         }
 
@@ -127,5 +127,17 @@ public class StealthDetection : MonoBehaviour
     {
         isAlert = false;
         TimeToSeen = 0;
+    }
+
+    
+    public void nextpoint()
+    {
+
+        if (nextPointer < 1)
+        {
+            P2.GotoNextPoint();
+            print("Hiding, going to next point");
+            nextPointer++;
+        }
     }
 }

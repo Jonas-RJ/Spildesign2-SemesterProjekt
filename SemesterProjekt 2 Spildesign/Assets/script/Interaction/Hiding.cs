@@ -91,7 +91,7 @@ public class Hiding : MonoBehaviour
             BoxCam.SetActive(false);
             HS.CanTakeDamage = true;
             isHiding = false;
-
+            SD.nextPointer = 0;
         }
     }
 }
