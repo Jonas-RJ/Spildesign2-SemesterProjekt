@@ -771,6 +771,7 @@ MonoBehaviour:
       way. Knowing this was her last chance of getting out alive she climbed out
       the window to begin her journey to safety...
   startButton: {fileID: 2393786797655012073}
+  DialogueManager: {fileID: 0}
 --- !u!1 &5262361001537427100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,7 +1080,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -52}
-  m_SizeDelta: {x: 800, y: 500}
+  m_SizeDelta: {x: 960, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5803980135019772034
 CanvasRenderer:
@@ -1109,7 +1110,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -226548358, guid: 10e3f5fe61f54554986294d6cc7587d9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
