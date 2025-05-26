@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6684235459433897147}
-  m_Layer: 0
+  - component: {fileID: 7990186772271235984}
+  m_Layer: 10
   m_Name: House 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,6 +33,26 @@ Transform:
   - {fileID: 3746017144922330369}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7990186772271235984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4189542854684745680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &3835419829261370003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87,40 +108,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 976559916295851304, guid: 3ba11ebc6a790914aac7c9565cf392e7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 648614742563020827}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ba11ebc6a790914aac7c9565cf392e7, type: 3}
 --- !u!4 &3746017144922330369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 488254345272579986, guid: 3ba11ebc6a790914aac7c9565cf392e7, type: 3}
   m_PrefabInstance: {fileID: 3835419829261370003}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4086829823902486459 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 976559916295851304, guid: 3ba11ebc6a790914aac7c9565cf392e7, type: 3}
-  m_PrefabInstance: {fileID: 3835419829261370003}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &648614742563020827
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4086829823902486459}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3329902420748629119, guid: d612c5c80fa2e644cb500ba2bfdfa6c9, type: 3}

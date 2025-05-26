@@ -18,15 +18,15 @@ public class StealthDetection : MonoBehaviour
     // [SerializeField] private  bool isSuspicious;
 
     public Hiding Hide;
-public int nextPointer = 0;
+    public int nextPointer = 0;
 
     [SerializeField] private float DropChase;
     [SerializeField] private float ChaseTimerReset = 0;
 
     public void Awake()
     {
-        Hide = FindAnyObjectByType<Hiding>();
-        pui = FindObjectOfType<PursuedUI>();
+        Hide = FindFirstObjectByType<Hiding>();
+        pui = FindFirstObjectByType<PursuedUI>();
     }
 
     // Update is called once per frame
@@ -37,15 +37,15 @@ public int nextPointer = 0;
         {
          Chaser.startChase();
          pui.Question();
-            if (alertOthersInMob)
-                {
-                Chaser.startChase();
-                pui.Exclamation();
-                print("start to chase");
-                }
         }
 
-        
+        if (alertOthersInMob)
+        {
+            Chaser.startChase();
+            pui.Exclamation();
+            print("start to chase");
+        }
+
         resetPatrol();
 
         if (Hide.isHiding)

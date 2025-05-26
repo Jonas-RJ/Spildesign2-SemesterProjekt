@@ -14,26 +14,25 @@ public class Hiding : MonoBehaviour
     public MovementScript2 ms2;
     public Light playerLight;
     public SpriteRenderer CharSprite;
-        public GameObject playerObject;
+    public GameObject playerObject;
     public GameObject InteractionObject;
     public Rigidbody PlayerRB;
     public GameObject PlayerCam;
     public GameObject PlayerSilhouette;
 
-
-    
-
-
-[Header("Barrel switches")]
+    [Header("Barrel switches")]
     public Light barrelLight;
     private int hideUnhide = 0;
     public GameObject BoxCam;
 
-
     [Header("Button")]
     public Button HidingButton;
 
-
+    public void Awake()
+    {
+        HS = FindFirstObjectByType<Health>();
+        SD = FindAnyObjectByType<StealthDetection>();
+    }
 
     void OnTriggerStay(Collider PlayerCol)
     {
@@ -61,8 +60,8 @@ public class Hiding : MonoBehaviour
     {
         if (hideUnhide < 1)
         {
-            //  playerObject.SetActive(false);
-            barrelLight.enabled = true;
+            // playerObject.SetActive(false);
+            // barrelLight.enabled = true;
             playerLight.enabled = false;
             hideUnhide++;
             playerObject.tag = "PlayerHiding";
@@ -70,7 +69,7 @@ public class Hiding : MonoBehaviour
             ms2.enabled = false;
             CharSprite.enabled = false;
             PlayerRB.isKinematic = true;
-            //   ButtonText.text = "Stop Hiding";
+            // ButtonText.text = "Stop Hiding";
 
             HS.CanTakeDamage = false;
             isHiding = true;
@@ -78,7 +77,7 @@ public class Hiding : MonoBehaviour
         }
         else
         {
-            barrelLight.enabled = false;
+            // barrelLight.enabled = false;
             playerLight.enabled = true;
             hideUnhide--;
             playerObject.tag = "Player";
@@ -86,7 +85,7 @@ public class Hiding : MonoBehaviour
             ms2.enabled = true;
             CharSprite.enabled = true;
             PlayerRB.isKinematic = false;
-            //   ButtonText.text = "Hide";
+            // ButtonText.text = "Hide";
             // PlayerCam.SetActive(true);
             // BoxCam.SetActive(false);
             HS.CanTakeDamage = true;

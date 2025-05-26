@@ -3,8 +3,12 @@ using UnityEngine;
 public class lockatcamera : MonoBehaviour
 {
   
-    [SerializeField] Camera _camera;
+    [SerializeField] GameObject _camera;
 
+    public void Awake()
+    {
+        _camera = GameObject.FindWithTag("MainCamera");
+    }
 
     private void LateUpdate()
     {

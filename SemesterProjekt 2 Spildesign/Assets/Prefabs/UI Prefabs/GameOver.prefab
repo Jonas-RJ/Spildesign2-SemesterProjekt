@@ -92,8 +92,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46aa7324e20372a4f9567b1997477fc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RetrySceneToLoad: Lucas Scene
-  MainMenuScene: Dialogue
+  RetrySceneToLoad: Map
+  MainMenuScene: main menu
 --- !u!1 &1570083728829346038
 GameObject:
   m_ObjectHideFlags: 0
