@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
+using UnityEditor.Experimental.GraphView;
 
 
 public class Patrol : MonoBehaviour
@@ -47,11 +48,13 @@ public class Patrol : MonoBehaviour
         // Choose the next destination point when the agent gets
         // close to the current one.
         PatrolToNextPoint();
-         
-        if (agent.velocity.x !=0 || agent.velocity.y !=0)
+
+        Vector3 direction3d = (agent.destination - transform.position).normalized;
+        Vector2 direction = new Vector2(direction3d.x, direction3d.y);
+        if (direction.magnitude >0f)
         {
-            animator.SetFloat("x", agent.velocity.x);
-            animator.SetFloat("y", 250*agent.velocity.y);
+            animator.SetFloat("x", transform.localScale.x);
+            animator.SetFloat("y", transform.localScale.y);
 
             animator.SetBool("IsWalking", true);
         }
@@ -66,5 +69,6 @@ public class Patrol : MonoBehaviour
     {
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
             GotoNextPoint();
+
     }
 }
