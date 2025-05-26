@@ -73,7 +73,10 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        animator.SetBool("IsOpen", false); //Makes sure the dialogue box gets off the screen.
+        if (sentences.Count == 0)
+        {
+            animator.SetBool("IsOpen", false); //Makes sure the dialogue box gets off the screen.
+        }
     }
 
     public void LoadSceneToStartGame()
