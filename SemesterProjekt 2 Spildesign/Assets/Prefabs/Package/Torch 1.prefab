@@ -63,7 +63,7 @@ Transform:
   m_GameObject: {fileID: 1558782040057742097}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.59, y: 1.36, z: -13.63}
+  m_LocalPosition: {x: 0.82, y: 1.36, z: -0.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4810,6 +4810,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4874,9 +4877,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558782040057742097}
   m_Enabled: 0
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 2
-  m_Shape: 0
   m_Color: {r: 1, g: 0.6278024, b: 0, a: 1}
   m_Intensity: 6.02
   m_Range: 10
@@ -4926,8 +4928,12 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!114 &7260934751839266246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4979,7 +4985,7 @@ Transform:
   m_GameObject: {fileID: 3278379378001587283}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.63, y: 0.51, z: -13.64}
+  m_LocalPosition: {x: 0.8599806, y: 0.51, z: -0.23997593}
   m_LocalScale: {x: 0.35967216, y: 1.7958, z: 0.39059955}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5010,6 +5016,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5082,7 +5091,7 @@ Transform:
   m_GameObject: {fileID: 5313714086029815746}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.61, y: 1.19, z: -13.69}
+  m_LocalPosition: {x: 0.8399806, y: 1.19, z: -0.28997517}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5099,6 +5108,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 27744977e8fbff74cadafcfe69bd78dd, type: 3}
+  m_Resource: {fileID: 8300000, guid: 27744977e8fbff74cadafcfe69bd78dd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.906
   m_Pitch: 1
