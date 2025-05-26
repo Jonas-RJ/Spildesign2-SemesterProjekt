@@ -208,6 +208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5142840624940799224}
   - component: {fileID: 3905909025362320225}
+  - component: {fileID: 1946802751426392433}
   - component: {fileID: 5946143429226972109}
   m_Layer: 0
   m_Name: npc character
@@ -254,7 +255,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: ad622695b9664ff469389daa7e6647c9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -286,6 +287,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1946802751426392433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2715452394411575152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61170fcd995eb4d45888082dfa58ebbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 0}
 --- !u!95 &5946143429226972109
 Animator:
   serializedVersion: 7
@@ -520,7 +534,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2802
+  m_VersionIndex: 2805
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -647,6 +661,7 @@ MonoBehaviour:
   alertMax: 3
   AllAlertMax: 4
   Hide: {fileID: 0}
+  nextPointer: 0
   DropChase: 5
   ChaseTimerReset: 0
 --- !u!1 &4815271648722136127
@@ -859,7 +874,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2802
+  m_VersionIndex: 2805
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
