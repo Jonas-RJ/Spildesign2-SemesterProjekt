@@ -176,13 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5abda56f955d0574aa1606ef0f0f8243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  points: []
   animator: {fileID: 5946143429226972109}
 --- !u!114 &6918571266647445962
 MonoBehaviour:
@@ -534,7 +528,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2805
+  m_VersionIndex: 2808
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -874,7 +868,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2805
+  m_VersionIndex: 2808
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
