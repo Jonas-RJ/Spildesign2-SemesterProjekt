@@ -35,16 +35,17 @@ public int nextPointer = 0;
         alertStatus();
         if (isAlert)
         {
-            Chaser.startChase();
-            pui.Question();
+         Chaser.startChase();
+         pui.Question();
+            if (alertOthersInMob)
+                {
+                Chaser.startChase();
+                pui.Exclamation();
+                print("start to chase");
+                }
         }
 
-        if (alertOthersInMob)
-        {
-            Chaser.startChase();
-            pui.Exclamation();
-            print("start to chase");
-        }
+        
         resetPatrol();
 
         if (Hide.isHiding)

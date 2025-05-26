@@ -555,47 +555,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Dwayne Johnson
+    name: ' '
     sentences:
-    - 'Welcome to the wicked world of the city Salem, Massachusetts in the late 1600''s! '
-    - The city is swarmed with paranoia and the hate towards witches is at an all
-      time high. The Mob is getting increasingly violent and is lead by the powerful
-      priest "Samuel Danforth". He secretly aims to manipulate the people into getting
-      control over the city and prosecuting whoever stands in his way or disobeys
-      him!
-    - "The 22 year old innocent Elizabeth lives at home now only with her mother
-      and sister as she lost her dad from pneumonia only a few months ago. \nThe
-      family are trying their hardest to lay low and not attract unwanted attention
-      however, their lives are about to change forever..."
-    - 'Earlier today, in a meeting with Samuel, Elizabeth was hit on by the priest
-      who is more than 20 years older than her. Naturally she declined and tried
-      to abandon him but this only made him angry. Samuel threatened to get her mother
-      and sister hung disguised as an accusation of Elizabeth being a witch! Trying
-      to stand up to the tyrani Elizabeth continued to refuse. '
-    - Samuel was now furious and eager to abuse his undoubtedly huge influence on
-      the mob. He immedietly ordered his allies to apprehend Elizabeth and more importantly
-      her family.
-    - In a moment of lack of concentration from the guards Elizabeth managed to escape
-      and get out of sight. This made it feel even more important to Samuel that
-      her family was caught and persecuted... and to his pleasant surprise that is
-      exactly what happened.
+    - 'Welcome to the wicked city of Salem, Massachusetts in the late 1600''s! '
+    - The City is abuzz with paranoia and hatred. Accusations of witchcraft are being
+      flung about like never before. The population has formed into a mob, led by
+      a powerful priest, a leading figure of the witch trials, Samuel Danforth. Secretly,
+      he plans to manipulate the entire town for his own goals. Anyone standing in
+      his way, will surely get accused of witchcraft!
+    - "Meet 22 year old Elizabeth. She lives at home with her mother and only sister,
+      left behind her father, who died of pneumonia only a few months ago. \n\nTogether,
+      they try to lay low, attempting to not attract unwanted attention. Soon however,
+      everything will change for them.\n"
+    - "Earlier today, in a meeting with Samuel, Elizabeth was cornered and hit on
+      by the priest, 20 years her senior. Naturally she declined and tried to get
+      away him, in doing so, stoking his anger and vindictive pettiness. \nSamuel
+      threatened to get her mother and sister burned at the stake, by accusing them
+      of witchcraft. Despite this, Elizabeth still refused. "
+    - Samuel was furious and eager to abuse his large influence on the people of
+      Salem. He immediately ordered his underlings to apprehend Elizabeth and her
+      family, accusing them of witchcraft.
+    - 'Noticing the crowds lack of concentration, Elizabeth managed to sneak away,
+      without being noticed. This made it feel even more important to Samuel that
+      her family was caught and persecuted... Elizabeth''s family, unaware of the
+      accusations made against them, were caught, much to the delight of Samuel. '
     - 'This meant that when Elizabeth eventually made it home, after sneaking through
-      the city through lesser populated streets, it was already too late. As fast
-      as possible she snuck her way to the town square - the typical place for witch
-      executions. '
+      the city through lesser populated streets, it was already too late. As quickly
+      as she could, she snuck her way to the town square - the typical place for
+      burning and hanging witches . '
     - "To her horror when she arrived she was met by the sight of her mother and
-      sister already being escorted to the gallow by guards. \nIn utter shock and
+      sister already being escorted to the bonfire by the mob. \nIn utter shock and
       feeling frozen Elizabeth could do nothing but stand there in the shadows and
-      watch as she lost the remaining part of her family... "
-    - The ceremony finished by Samuel ordering the people of the mob to search for
-      and apprehend Elizabeth in any sight of her. As she heard this it became evident
-      to Elizabeth that she had no choice but to leave the city. Wanting to fetch
-      whatever she could she ran home with tears running down her face.
-    - Arriving home hoping that this would be too obvious for the mob to check first
-      she gathered whatever useful stuff she could. After being home for less than
-      10 minutes she got a heads up from the neighbour that the guards were on their
-      way. Knowing this was her last chance of getting out alive she climbed out
-      the window and headed north to begin her journey to safety...
+      watch as she lost the last remainders of her family... "
+    - "As the burnings finished, Samuel ordered the mob to search for, and apprehend
+      Elizabeth. Hearing this, it became clear to Elizabeth that she was no longer
+      safe in the city, and had to escape. \nWanting to fetch whatever belongings
+      she could, she ran home with tears running down her face."
+    - 'Arriving home, she realized it was already too late. The mob had already gotten
+      to her house and set it on fire. Having lost everything, and having no one
+      left to help her, Elizabeth knew the time to run was now. And so, she began
+      her escape, heading north... '
   startButton: {fileID: 198843503}
   DialogueManager: {fileID: 176873921}
 --- !u!114 &198843506
@@ -619,8 +618,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}

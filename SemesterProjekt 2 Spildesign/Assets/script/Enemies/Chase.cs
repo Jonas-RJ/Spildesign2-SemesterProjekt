@@ -29,7 +29,6 @@ public class Chase : MonoBehaviour
     {
         mDistance = Vector3.Distance(mAgent.transform.position, Target.position);
         mAgent.SetDestination(Target.position);
-        Debug.Log("im chasing the player");
     }
 
 
