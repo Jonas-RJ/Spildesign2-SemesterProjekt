@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class BackgroundManager : MonoBehaviour
 {
-    public int currentSlide = 1;
+    public int currentSlide = 0;
 
     public GameObject pictureOne;
     public GameObject pictureTwo;
@@ -15,7 +15,7 @@ public class BackgroundManager : MonoBehaviour
 
     public void Start()
     {
-        pictureOne.SetActive(true);
+        pictureOne.SetActive(false);
         pictureTwo.SetActive(false);
         pictureThree.SetActive(false);
         pictureFour.SetActive(false);
@@ -25,6 +25,11 @@ public class BackgroundManager : MonoBehaviour
 
     public void Update()
     {
+        if (currentSlide == 1)
+        {
+            pictureOne.SetActive(true);
+        }
+        
         if (currentSlide == 2)
         {
             pictureTwo.SetActive(true);
@@ -43,13 +48,13 @@ public class BackgroundManager : MonoBehaviour
             pictureThree.SetActive(false);
         }
         
-        if (currentSlide == 7)
+        if (currentSlide == 8)
         {
             pictureFive.SetActive(true);
             pictureFour.SetActive(false);
         }
         
-        if (currentSlide == 9)
+        if (currentSlide == 10)
         {
             pictureSix.SetActive(true);
             pictureFive.SetActive(false);
