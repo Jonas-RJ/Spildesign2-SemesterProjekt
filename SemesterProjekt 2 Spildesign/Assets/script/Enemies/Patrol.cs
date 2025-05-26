@@ -53,8 +53,8 @@ public class Patrol : MonoBehaviour
         Vector2 direction = new Vector2(direction3d.x, direction3d.y);
         if (direction.magnitude >0f)
         {
-            animator.SetFloat("x", transform.localScale.x);
-            animator.SetFloat("y", transform.localScale.y);
+            animator.SetFloat("x", direction.x);
+            animator.SetFloat("y", direction.y);
 
             animator.SetBool("IsWalking", true);
         }
