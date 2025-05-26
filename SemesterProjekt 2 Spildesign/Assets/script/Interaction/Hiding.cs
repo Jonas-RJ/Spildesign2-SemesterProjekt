@@ -18,6 +18,7 @@ public class Hiding : MonoBehaviour
     public GameObject InteractionObject;
     public Rigidbody PlayerRB;
     public GameObject PlayerCam;
+    public GameObject PlayerSilhouette;
 
 
     
@@ -31,7 +32,6 @@ public class Hiding : MonoBehaviour
 
     [Header("Button")]
     public Button HidingButton;
-    public TextMeshProUGUI ButtonText;
 
 
 
@@ -70,11 +70,11 @@ public class Hiding : MonoBehaviour
             ms2.enabled = false;
             CharSprite.enabled = false;
             PlayerRB.isKinematic = true;
-            ButtonText.text = "Stop Hiding";
-            PlayerCam.SetActive(false);
-            BoxCam.SetActive(true);
+            //   ButtonText.text = "Stop Hiding";
+
             HS.CanTakeDamage = false;
             isHiding = true;
+            PlayerSilhouette.SetActive(false);
         }
         else
         {
@@ -86,12 +86,13 @@ public class Hiding : MonoBehaviour
             ms2.enabled = true;
             CharSprite.enabled = true;
             PlayerRB.isKinematic = false;
-            ButtonText.text = "Hide";
-            PlayerCam.SetActive(true);
-            BoxCam.SetActive(false);
+            //   ButtonText.text = "Hide";
+            // PlayerCam.SetActive(true);
+            // BoxCam.SetActive(false);
             HS.CanTakeDamage = true;
             isHiding = false;
             SD.nextPointer = 0;
+            PlayerSilhouette.SetActive(true);
         }
     }
 }

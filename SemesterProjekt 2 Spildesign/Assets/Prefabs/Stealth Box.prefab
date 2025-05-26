@@ -350,6 +350,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 745c1af2a7cd5e44e8f1dfa03bb3f5a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isHiding: 0
+  HS: {fileID: 0}
+  SD: {fileID: 0}
   ms2: {fileID: 0}
   playerLight: {fileID: 0}
   CharSprite: {fileID: 0}
@@ -357,7 +360,7 @@ MonoBehaviour:
   InteractionObject: {fileID: 0}
   PlayerRB: {fileID: 0}
   PlayerCam: {fileID: 0}
+  PlayerSilhouette: {fileID: 0}
   barrelLight: {fileID: 4655379318758391215}
   BoxCam: {fileID: 451946977307940245}
   HidingButton: {fileID: 0}
-  ButtonText: {fileID: 0}
