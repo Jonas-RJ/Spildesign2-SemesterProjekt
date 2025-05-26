@@ -49,12 +49,11 @@ public class Patrol : MonoBehaviour
         // close to the current one.
         PatrolToNextPoint();
 
-        Vector3 direction3d = (agent.destination - transform.position).normalized;
-        Vector2 direction = new Vector2(direction3d.x, direction3d.y);
+        Vector3 direction = (agent.destination - transform.position);
         if (direction.magnitude >0f)
         {
             animator.SetFloat("x", direction.x);
-            animator.SetFloat("y", direction.y);
+            animator.SetFloat("z", direction.z);
 
             animator.SetBool("IsWalking", true);
         }
