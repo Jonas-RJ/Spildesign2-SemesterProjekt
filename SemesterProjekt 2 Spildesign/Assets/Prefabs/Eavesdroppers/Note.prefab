@@ -1227,7 +1227,7 @@ GameObject:
   - component: {fileID: 1730001153567287003}
   - component: {fileID: 6603301733785888830}
   m_Layer: 0
-  m_Name: Eavesdrop1 1
+  m_Name: Note
   m_TagString: Interact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -35,8 +35,8 @@ public class StealthDetection : MonoBehaviour
         alertStatus();
         if (isAlert)
         {
-         Chaser.startChase();
-         pui.Question();
+            Chaser.startChase();
+            pui.Question();
         }
 
         if (alertOthersInMob)
@@ -61,7 +61,9 @@ public class StealthDetection : MonoBehaviour
         if (!isAlert)
         {
             P2.PatrolToNextPoint();
+
         }
+        
     }
 
 
@@ -112,10 +114,13 @@ public class StealthDetection : MonoBehaviour
         if (isAlert && TimeToSeen <= 0)
         {
             ChaseTimerReset += Time.deltaTime;
+            alertOthersInMob = false;
+            if (!isAlert && alertOthersInMob) {
+                            nextpoint();
+            }
             if (ChaseTimerReset >= DropChase)
             {
                 isAlert = false;
-                alertOthersInMob = false;
                 ChaseTimerReset = 0;
                 pui.Disable();
                 print("stop chasing");
