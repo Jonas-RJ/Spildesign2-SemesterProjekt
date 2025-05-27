@@ -41,9 +41,9 @@ public class StealthDetection : MonoBehaviour
 
         if (alertOthersInMob)
         {
-            Chaser.startChase();
+         //   Chaser.startChase();
             pui.Exclamation();
-            print("start to chase");
+           // print("start to chase");
         }
 
         resetPatrol();
@@ -115,9 +115,7 @@ public class StealthDetection : MonoBehaviour
         {
             ChaseTimerReset += Time.deltaTime;
             alertOthersInMob = false;
-            if (!isAlert && alertOthersInMob) {
-                            nextpoint();
-            }
+            
             if (ChaseTimerReset >= DropChase)
             {
                 isAlert = false;
