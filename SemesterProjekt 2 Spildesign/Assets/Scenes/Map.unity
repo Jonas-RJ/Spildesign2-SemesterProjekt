@@ -539,6 +539,10 @@ PrefabInstance:
       value: Eavesdrop Man Right
       objectReference: {fileID: 0}
     - target: {fileID: 7114296056565967009, guid: 99a55e7bcff12c24786da4e4a8596b03, type: 3}
+      propertyPath: DM
+      value: 
+      objectReference: {fileID: 916751703}
+    - target: {fileID: 7114296056565967009, guid: 99a55e7bcff12c24786da4e4a8596b03, type: 3}
       propertyPath: ListenIn
       value: 
       objectReference: {fileID: 1214761999}
@@ -4691,6 +4695,10 @@ PrefabInstance:
       propertyPath: m_margin.z
       value: -478.21252
       objectReference: {fileID: 0}
+    - target: {fileID: 7114296056565967009, guid: 5c20c72a6c1de7c478f7aae065859311, type: 3}
+      propertyPath: DM
+      value: 
+      objectReference: {fileID: 1573966287}
     - target: {fileID: 7114296056565967009, guid: 5c20c72a6c1de7c478f7aae065859311, type: 3}
       propertyPath: ListenIn
       value: 
@@ -12718,7 +12726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1556349665610883106, guid: aa92e341d9ae2e84ea4b6b2f2f02e5e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 334.85
+      value: 535.02
       objectReference: {fileID: 0}
     - target: {fileID: 1556349665610883106, guid: aa92e341d9ae2e84ea4b6b2f2f02e5e6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12726,7 +12734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1556349665610883106, guid: aa92e341d9ae2e84ea4b6b2f2f02e5e6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 314.9
+      value: 597.08
       objectReference: {fileID: 0}
     - target: {fileID: 1556349665610883106, guid: aa92e341d9ae2e84ea4b6b2f2f02e5e6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21385,6 +21393,10 @@ PrefabInstance:
       value: Eavesdrop Man Ahead
       objectReference: {fileID: 0}
     - target: {fileID: 7114296056565967009, guid: 984cc5ceef636e64789efffd47aee1a6, type: 3}
+      propertyPath: DM
+      value: 
+      objectReference: {fileID: 653815241}
+    - target: {fileID: 7114296056565967009, guid: 984cc5ceef636e64789efffd47aee1a6, type: 3}
       propertyPath: ListenIn
       value: 
       objectReference: {fileID: 1951020919}
@@ -27282,6 +27294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eavesdrop Woman Left
       objectReference: {fileID: 0}
+    - target: {fileID: 7114296056565967009, guid: 696629ab4093e9e478f95530635c271e, type: 3}
+      propertyPath: DM
+      value: 
+      objectReference: {fileID: 995873939}
     - target: {fileID: 7114296056565967009, guid: 696629ab4093e9e478f95530635c271e, type: 3}
       propertyPath: ListenIn
       value: 
@@ -34081,6 +34097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eavesdrop Duo
       objectReference: {fileID: 0}
+    - target: {fileID: 7114296056565967009, guid: 9f4a0c3bb62851d4aa447385409cfd7d, type: 3}
+      propertyPath: DM
+      value: 
+      objectReference: {fileID: 1191200747}
     - target: {fileID: 7114296056565967009, guid: 9f4a0c3bb62851d4aa447385409cfd7d, type: 3}
       propertyPath: ListenIn
       value: 
@@ -41450,6 +41470,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 279584728}
     m_Modifications:
+    - target: {fileID: 6954850024558175208, guid: ac9fd585dd68e4140ab9d7e9be274d15, type: 3}
+      propertyPath: m_Range
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954850024558175208, guid: ac9fd585dd68e4140ab9d7e9be274d15, type: 3}
+      propertyPath: m_Intensity
+      value: 218.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871722696626856331, guid: ac9fd585dd68e4140ab9d7e9be274d15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871722696626856331, guid: ac9fd585dd68e4140ab9d7e9be274d15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871722696626856331, guid: ac9fd585dd68e4140ab9d7e9be274d15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8296491415921842804, guid: ac9fd585dd68e4140ab9d7e9be274d15, type: 3}
       propertyPath: m_LocalPosition.x
       value: 246.21
@@ -41496,7 +41536,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8296491415921842804, guid: ac9fd585dd68e4140ab9d7e9be274d15, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1981305097}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac9fd585dd68e4140ab9d7e9be274d15, type: 3}
 --- !u!4 &1658086578 stripped
@@ -42402,6 +42445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Note
       objectReference: {fileID: 0}
+    - target: {fileID: 6603301733785888830, guid: 5e536025bf2e1c446bddbbdf23f8135e, type: 3}
+      propertyPath: DM
+      value: 
+      objectReference: {fileID: 1754417291}
     - target: {fileID: 6603301733785888830, guid: 5e536025bf2e1c446bddbbdf23f8135e, type: 3}
       propertyPath: ReadThis
       value: 
@@ -51072,6 +51119,127 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad044b554cc4be74698e4241e69547cc, type: 3}
+--- !u!1 &1981305096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1981305097}
+  - component: {fileID: 1981305099}
+  - component: {fileID: 1981305098}
+  m_Layer: 10
+  m_Name: Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1981305097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981305096}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.4, y: -2.2, z: 2.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 667183649}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1981305098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981305096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &1981305099
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981305096}
+  m_Enabled: 1
+  serializedVersion: 11
+  m_Type: 2
+  m_Color: {r: 0.91764706, g: 0.2636963, b: 0.02745095, a: 0}
+  m_Intensity: 218.8
+  m_Range: 11
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!1001 &1987264793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57058,6 +57226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eavesdrop Woman Ahead
       objectReference: {fileID: 0}
+    - target: {fileID: 7114296056565967009, guid: d10bc6b4f83406041903382495180132, type: 3}
+      propertyPath: DM
+      value: 
+      objectReference: {fileID: 485830813}
     - target: {fileID: 7114296056565967009, guid: d10bc6b4f83406041903382495180132, type: 3}
       propertyPath: ListenIn
       value: 

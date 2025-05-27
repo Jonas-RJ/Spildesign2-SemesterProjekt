@@ -84,6 +84,9 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadScene("Map");
         
     }
-    
-    
+
+    public void CloseOnWalkaway()
+    {
+                    animator.SetBool("IsOpen", false); //Makes sure the dialogue box gets off the screen.
+    }
 }
