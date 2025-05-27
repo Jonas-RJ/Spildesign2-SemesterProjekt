@@ -10,26 +10,23 @@ public class ViodeoPlayer : MonoBehaviour
     {
         GetComponent<VideoPlayer>();
         VideoPlayer.Play();
-
+        Invoke("videoreplay", 8);
     }
 
     // Update is called once per frame
+
     void Update()
     {
-        //videoreplay();
+        
     }
 
-    /*public void videoreplay()
+    public void videoreplay()
     {
-        if (VideoPlayer.loopPointReached) 
-        {
-            if (!VideoPlayer.isPlaying)
-            {
+   
+            
                 VideoPlayer.Play();
                 VideoPlayer.time = 4;
+            
 
-            }
-        }
-        
-    }*/
+    }
 }
