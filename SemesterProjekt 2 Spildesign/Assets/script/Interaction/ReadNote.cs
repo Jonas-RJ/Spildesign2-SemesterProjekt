@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class ReadNote : MonoBehaviour
 {
 
-    DialogueManager DM;
+    public DialogueManager DM;
     DialogueTrigger DT;
     public Button ReadThis;
 
@@ -22,6 +22,7 @@ public class ReadNote : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             ReadThis.gameObject.SetActive(false);
+            DM.CloseOnWalkaway();        
         }
     }
 }

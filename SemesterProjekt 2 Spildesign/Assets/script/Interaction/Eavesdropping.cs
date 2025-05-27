@@ -4,11 +4,14 @@ using UnityEngine.UI;
 public class Eavesdropping : MonoBehaviour
 {
 
-
-    DialogueManager DM;
+    public DialogueManager DM;
     DialogueTrigger DT;
     public Button ListenIn;
 
+    void Awake()
+    {
+    
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -21,6 +24,7 @@ public class Eavesdropping : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             ListenIn.gameObject.SetActive(false);
+            DM.CloseOnWalkaway();        
         }
     }
 
