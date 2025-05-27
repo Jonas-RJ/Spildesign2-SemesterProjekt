@@ -64,7 +64,7 @@ public class MovementScript2 : MonoBehaviour
            }
            else
            { moveSpeed = normalSpeed;}
-        */
+        
 
         if (moveSpeed <= normalSpeed)
         {
@@ -77,7 +77,7 @@ public class MovementScript2 : MonoBehaviour
             moveSpeed = normalSpeed;
         }
 
-
+*/
 
     }
 
