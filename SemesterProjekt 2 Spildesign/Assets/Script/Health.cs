@@ -11,7 +11,7 @@ public class Health : MonoBehaviour
     [SerializeField] GameObject GameOverScreen;
    public bool CanTakeDamage;
     [SerializeField] HPChange hpc;
-
+    public CapsuleCollider CapsuleBox;
     public AudioSource soundTakeDamage;
     
     public void Awake()
@@ -40,6 +40,8 @@ public class Health : MonoBehaviour
                 TakeDamage();
                 hpc.Change();
                 print("damage");
+                //disable collider
+                CapsuleBox.enabled = false;
                 if (HideScript.isHiding == false)
                 {
                     Invoke("SetTrue", recovery);
@@ -65,5 +67,8 @@ public class Health : MonoBehaviour
     void SetTrue()
     {
         CanTakeDamage = true;
+        // Enable collider
+                        CapsuleBox.enabled = true;
+
     }
 }
